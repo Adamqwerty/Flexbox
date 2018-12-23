@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background: #ddd;
+    background: #eee;
 }
 
 .wrapper{
@@ -19,22 +19,85 @@ body{
     flex-wrap: wrap-reverse;
 }
 
-.box{
-    height: 100px;
-    flex: 1 0 200px;
+/* menu base styles */
+
+nav{
+    background: #333;
+
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    
+    }
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: #aaa;
+}
+
+nav a:hover{
+    background-color: #555;
+}
+
+/* Social menu base style */
+
+a.tw{
+    background: url(tw.png) no-repeat center;
+    background-size: 80%;
+}
+a.fb{ 
+    background: url(fb.png) no-repeat center;
+    background-size: 80%;}
+
+.social a{
+    text-indent: -10000px;
+}
+
+.social{
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+/* flex styles */
+
+nav ul.social{
+    flex: 1 1 0;
+    display: flex;
+}
+
+nav ul.social li{
+    flex: 1 1 0;
     
 }
 
-.one{
-    background: red;
-    
-}
-.two{
-    background: blue;
-    
-}
 
-.three{
-    background: green;
-    
+
+/* flex styles */
+
+@media screen and (min-width: 760px){
+
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    nav li{
+        flex: 1 1 0;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social{
+        margin: 0;
+
+    }
 }
