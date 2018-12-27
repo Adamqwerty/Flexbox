@@ -135,4 +135,11 @@ nav ul.social li{
     article.stack{
         flex:0 1 100%;
     }
+
+    .one{order: 0;}
+    .two{order: 0;}
+    .three{order: 0;}
+    .four{order: 0;}
+    .five{order: 0;}
+    .six{order: 0;}
 }
